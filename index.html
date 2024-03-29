@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+	<title>Dashboard</title>
+</head>
+<body onload="main();">
+	<div id="dashboard" class="centered full-size hidden">
+		<input type="text"     id="settings-player-1-name"    placeholder="Player 1">
+		<input type="text"     id="settings-player-2-name"    placeholder="Player 2">
+		<input type="number"   id="settings-first-to"         value="11">
+		<input type="number"   id="settings-win-by"           value="2">
+		<input type="checkbox" id="settings-enable-let-limit" >
+		<input type="number"   id="settings-let-limit"        value="2" disabled>
+		<input type="number"   id="settings-max-games"        value="5">
+		<input type="button"   id="settings-start-game"       value="Start Game">
+	</div>
+	<div id="score-wrapper" class="scoreboard centered full-size noselect">
+		<span class="score-counter" id="score-1">0</span>
+		<span>-</span>
+		<span class="score-counter" id="score-2">0</span>
+	</div>
+	<div id="scoreboard-wrapper">
+		<div id="games-wrapper" class="scoreboard centered full-size noselect">
+			<span class="score-counter" id="games-1">0</span>
+			<span>-</span>
+			<span class="score-counter" id="games-2">0</span>
+		</div>
+		<div id="bottom-tab-wrapper" class="centered noselect">
+			<div id="bottom-tab" class="centered hidden"></div>
+		</div>
+	</div>
+</body>
+</html>
